@@ -1,6 +1,6 @@
 import React from 'react'
 import {Switch} from 'react-router-dom'
-import Route from './Route'//onde estao as rotas privasa, toda config
+import Route from './Route'//onde estao as rotas privadas, toda config
 
 import SignIn from '../pages/SignIn'
 import SignUp from '../pages/SignUp'
