@@ -16,7 +16,7 @@ function App() {
       <Routes />
       <GlobalStyle />
     </Router>
-    </Provider>
+  </Provider>
   )
 }
 
