@@ -1,18 +1,20 @@
 import React from 'react';
-import Proptypes from 'prop-types'
+import PropTypes from 'prop-types'
+
 import { Wrapper, Content } from './styles';
 
-//children - sao todo conteudo colocado dentro do componente
-export default function AuthLayout({children}) {
-  return ( 
+export default function AuthLayout({ children }) {
+  return (
+
   <Wrapper>
     <Content>
-      {children}
+    {children}
     </Content>
-  </Wrapper>
+    </Wrapper>
   )
+  
 }
 
- AuthLayout.propTypes = {
-     children: Proptypes.element.isRequired
- }
+AuthLayout.propTypes = {
+  children: PropTypes.element.isRequired// element para mandar assim <children />
+}

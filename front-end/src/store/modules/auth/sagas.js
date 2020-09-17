@@ -14,13 +14,13 @@ export function* signIn({payload}) {
     const {token, user} = response.data
 
     if(!user.provider) {//se o user nao for um prestador de serviço, nao vou deixar ele logar
-        console.log('O user nao é um prestador de serviço')
+        console.tron('O user nao é um prestador de serviço')
         return
     }
 
     yield put(signInSuccess(token, user))
 
-    history.push('/dashboard')
+    history.push("/dashboard")
 }
 export default all([
     takeLatest('@auth/SIGN_IN_REQUEST', signIn)//sera executada sempre que a action mudar
