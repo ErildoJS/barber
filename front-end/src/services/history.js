@@ -1,6 +1,5 @@
-//usado para o user conseguir navegar para todos os lugares,ate do redux
-import {createBrowserHistory} from 'history'
+import { createBrowserHistory } from 'history';
 
-const history = createBrowserHistory()
+const history = createBrowserHistory();
 
-export default history
+export default history;
